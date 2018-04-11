@@ -28,7 +28,7 @@ namespace lab5
         public virtual void Info()
         {
             Console.WriteLine("Информация о книге: ");
-            Console.WriteLine("   Код книги: {0}\n    Автор: {1}\n    Название книги: {2} \n    Жанр: {3}\n",
+            Console.WriteLine("    Код книги: {0}\n    Автор: {1}\n    Название книги: {2} \n    Жанр: {3}\n",
                 ID_Book, Author, NameBook, Genre);
         }
     }
