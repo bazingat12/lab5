@@ -27,6 +27,10 @@ namespace lab5
             foreach (DateDelivery date in ListDelivery)
             {
                 date.Info();
+                if (date is IbooksReader)
+                {
+                    (date as IbooksReader).Count("3");
+                }
                 Console.WriteLine();
             }
             Console.ReadLine();

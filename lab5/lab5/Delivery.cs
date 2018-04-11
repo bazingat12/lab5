@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-    class Delivery
+    class Delivery : IbooksReader
     {
         public int ID_Delivery
         { get; set; }
@@ -33,6 +33,11 @@ namespace lab5
             EmployeeDelivery.Info();
             Reader1.Info();
             Exemplar1.Info();
+        }
+
+        void IbooksReader.Count(string count)
+        {
+            Console.WriteLine("Колличество книг на руках читателя: {0}", count);
         }
     }
 }

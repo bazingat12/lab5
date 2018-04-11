@@ -49,6 +49,7 @@
     <Compile Include="Employee.cs" />
     <Compile Include="Exemplar.cs" />
     <Compile Include="Home.cs" />
+    <Compile Include="IbooksReader.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
