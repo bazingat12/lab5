@@ -21,8 +21,8 @@ namespace lab5
         public override void Info()
         {
             base.Info();
-            Console.WriteLine("Дата выдачи: {0}", StartOfDelivery);
-            Console.WriteLine("Дата возврата: {0}", EndOfDelivery);
+            Console.WriteLine("\n Дата выдачи: {0}", StartOfDelivery);
+            Console.WriteLine(" Дата возврата: {0}", EndOfDelivery);
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-    class Employee : Home 
+    class Employee 
     {
         public int ID_Employee
         { get; set; }
@@ -23,7 +23,7 @@ namespace lab5
         public byte Experience
         { get; set; }
 
-        public Employee (int ID_Employee, Position EmployeePosition, string Surname, string Name, string Patronymic, int INN, byte Experience, string City, string Street, string home1): base (City, Street, home1)
+        public Employee (int ID_Employee, Position EmployeePosition, string Surname, string Name, string Patronymic, int INN, byte Experience, string City, string Street, string home1)
         {
             this.ID_Employee = ID_Employee;
             this.EmployeePosition = EmployeePosition;
@@ -37,8 +37,8 @@ namespace lab5
         {
             Console.WriteLine("Сотрудник: ");
             Console.WriteLine("    Код сотрудника: {0}\n    Фамилия: {1}\n    Имя: {2}\n    Отчество: "
-                + "{3}\n    ИНН: {4}\n    Стаж работы: {5}\n    Город: {6}\n    Улица: {7}\n    Дом: {8}\n",
-                ID_Employee, Surname, Name, Patronymic, INN, Experience, city, street, home);
+                + "{3}\n    ИНН: {4}\n    Стаж работы: {5}\n",
+                ID_Employee, Surname, Name, Patronymic, INN, Experience);
                EmployeePosition.Info();
         }
     }

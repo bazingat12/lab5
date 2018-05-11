@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab5
 {
-    class Exemplar
+    class Exemplar 
     {
         public int ID_Exemplar
         { get; set; }
